@@ -1,0 +1,58 @@
+.barra_menus{ 
+	overflow: hidden;
+	background-color: rgba(100,100,100,0.7);
+	font-family: sans-serif;
+}
+.barra_menus a{
+	float: left;
+	font-size: 16px;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+.menu_desplegable{
+	float: left;
+	overflow: hidden;
+}
+.menu_desplegable, .boton_desplegar{
+	cursor: pointer;
+	font-size: 16px;
+	border: none;
+	color: white;
+	padding: 7px 16px; /*distancia  desde el borde de un elemneto hasta el contenido*/
+	background-color: rgba(0,0,0,0);/* define el color de fondo de un objeto*/
+	font-family: inherit; /*define la familia tipografica*/
+	margin: 0; /* en esta linea define margen*/
+}
+.barra_menus a:hover, .menu_desplegable:hover, .boton_desplegar:hover{ 
+	background-color: rgba(200,0,100,0.9); /*color*/
+}
+.contenido_desplegable{ /*todo lo que se escribe en este bloque afectara al contenido*/
+	display: none;
+	position: absolute; /*posicion absoluta*/
+	background-color: #f9f9f9; /*colores de fondo de un obejeto*/
+	min-width: 160px; /*declaracion  y se forma por una propiedad*/
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+.contenido_desplegable a{
+	float: none;
+	color: black; /*combina los colores de pagina*/
+	padding: 12px 16px; /* distancia desde el borde de un elemento hasta el contenido*/
+	text-decoration: none;
+	display: block;
+	text-align: center; /*texto alineado*/
+}
+.contenido_desplegable a:hover{
+	background-color: #ddd; /*colores de fondo de un objeto*/
+}
+.mostrar{
+	display: block;
+}
+html{
+	background: url('imagen.jpg') no-repeat;
+	min-height: 100px; /*define el minimo de alto de un elemento*/
+	background-size: cover;
+}
+

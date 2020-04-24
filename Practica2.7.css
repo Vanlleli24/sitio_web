@@ -1,0 +1,40 @@
+.banner{
+	width: 760px; /*ancho*/
+	height: 300px; /*alto*/
+	border: 3px solid blue; /*borde de 3px con un color rojo*/
+	margin: auto; /*margen*/
+
+	/*background-image: url(img/imagen.jpg);*/
+
+	background-size: 100% 100%; /*para que la imegen ocupe todo el ancho y alto del contenedor*/
+
+	/*animation: none; banner;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;*/
+
+	animation: banner 10s infinite; /*animacion que durara 10s se repetira infinida de veces*/
+	animation-direction: alternate; /*el hecho que repite la final y cinue de atras para adelante*/
+
+}
+	@keyframes banner{ /*paradas que va a tener la animacion banner*/
+		0%, 30% { /*primera parada de 3 segundos*/
+			background-image: 'img/cubo.jpg'; /*primera imagen*/
+			opacity: 1; /*este hara que despues de terminar una imagen aparazca un fonde de color blanco*/
+		}
+		31%, 34%{ /*tiempo en que mostrara el fondo de color blanco*/
+			opacity: 0.1; /*este hara que despues de terminar una imagen aparazca un fonde de color blanco*/
+		}
+		35%, 65%{ /*segunda parada con la imagen 2 y tres segundos*/
+			background-image: url('img/amigo1.jpg'); /*imagen numero 2*/
+			opacity: 1; /*este hara que despues de terminar una imagen aparazca un fonde de color blanco*/
+		}
+		66%, 69%{ /*tiempo en que mostrara el fondo de color blanco*/
+			opacity: 0.1; /*este hara que despues de terminar una imagen aparazca un fonde de color blanco*/
+		}
+		70%, 100%{ /*tercera parada con otros tres segundos para tercera imagen*/
+			background-image: url(img/jesus.jpg); /*imagen numero 3*/
+			opacity: 1S;  /*este hara que despues de terminar una imagen aparazca un fonde de color blanco*/
+		}
+	}
+
+	

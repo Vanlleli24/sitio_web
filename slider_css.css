@@ -1,0 +1,85 @@
+*{
+	box-sizing: border-box;
+}
+.miSlider{
+	display: none;
+}
+body{
+	font-family: Verdana, sans-serif;
+}
+img{
+	vertical-align: middle; /*imagen en vertical*/
+}
+.contenedor-slider{
+	max-width: 550px; /*distancia entre las flachas*/
+	position: relative;
+	margin: auto; /*margen de este cada una*/
+}
+/*formato a las flechitas*/
+.previa, .siguiente{
+	cursor: pointer; /*al estar sobre las flachas cambiara la flecha a una mano para clip*/
+	position: absolute; /*posicion*/
+	top: 50%; /*lugar donde se encuntran las flechas verticalmente*/
+	width: auto; /*define el ancho*/
+	padding: 16px;/*tamaño del cuadro de flechas*/
+	margin-top: -22px; /*entre mas sea mas arriba se encontraran*/
+	color: #7FA7DC; /*color de solo la flecha*/
+	font-weight: bold;
+	font-size: 20px; /*largo del cuadro de flecha*/
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	background-color: #42044E; /*color del cuadro donde esta la flecha*/
+}
+.siguiente{
+	right: 0;
+	border-radius: 3px 0 0 3px; /*cambia el contorno del cuadro*/
+}
+.siguiente:hover, .previa:hover{
+	background-color: #545961; /*cambio de color al poner el cursor en el caudro*/
+}
+.titulo{
+	color: #0B0B61; /*color del texto de titulo*/
+	font-size: 21px; /*tamaño del texto*/
+	padding: 8px 22px;/*posicion del texto*/
+	position: absolute;
+	bottom: 8px; /*altura a donde este el texto*/
+	width: 100px;
+	text-align: center; /*texto centrado*/
+}
+.numeroTexto{
+	color: #f2f2f2; /*color de numero*/
+	font-size: 20px; /*tamaño de los numeros*/
+	padding: 8px 12px; 
+	position: absolute;
+	top: 0;
+}
+.puntito{
+	cursor: pointer; /*al estar sobre las flachas cambiara la flecha a una mano para clip*/
+	height: 13px; /*ancho del punto*/
+	width: 15px; /*largo del punto*/
+	margin: 0 5px; /*distancia entre cada punto*/
+	background-color: #bbb; /*color*/
+	border-radius: 50%; /*contorno del punto*/
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+.puntito:hover, .activo{
+	background-color: #717171; /*color*/
+}
+.desvanecido{
+	-webkit-animation-name:fade;
+	-webkit-animation-duration:15s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@-webkit-keyframes fade{
+	from{opacity: .4}
+	to{opacity: 1}
+}
+@keyframes fade{
+	from{opacity: .4}
+	to{opacity: 1}
+}
+@media only screen and (max-width: 300px){
+	.previa, .siguiente, .titulo{font-size: 11px;}
+}

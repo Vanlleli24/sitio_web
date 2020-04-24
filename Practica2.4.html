@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html> <!-inio de la etiqueta html->
+<head> <!-inicio del la cabecera ->
+	<link rel="stylesheet" type="text/css" href="Practica2.4.css"> <!-llama a traer a traer a css->
+	<title>Practica2.4 Menu CSS</title>  <!-titulo de la pestaña->
+</head> <!-fin del la cabecera ->
+<body > <!-inicio de la etiqueta cuerpo->
+<!-inicio del codigo para el menu->
+
+<div class="barra_menus"> <!-etiqueta div para clase->
+	<a href="menu_interactivo.html">Home</a>
+	<a href="www.instagram.com">Instagram</a>
+	<!-segmento del codigo para el menu->
+	<div class="menu_desplegable"> <!-bloque con un nombre de la clase->
+		<button class="boton_desplegar" onclick="mostrar()">Categorias</button>  <!-clase para el boton->
+		<div class="contenido_desplegable" id="miMenu"> <!-etiqueta div para clase con un id->
+			<a href="css1.html">Link1</a>
+			<a href="uno.html">Link2</a>
+			<a href="dos.html">Link3</a>
+		</div>
+	</div>
+	<!-fin del segmento para el menu despegable->
+    <!-segmento de codigo para el menu despegable->
+
+<div class="menu_desplegable"> <!-etiqueta div para clase->
+	<button class="boton_desplegar" onclick="mostrar2()">Categorias</button> <!-clase para el boton->
+	<div class="contenido_desplegable" id="miMenu2"> <!-etiqueta div para clase con un id->
+	<a href="tres.html">Link1</a>
+	<a href="cuatro.html">Link2</a>
+	<a href="#">Link3</a>
+</div>
+</div>
+<!-fin del segmento para el menu despegable->
+</div>
+<!-fin del codigo para el menu ->
+<script src="Practica.2.4.js"></script>  <!-llama a traer a traer a js->
+</body> <!-fin de la etiqueta cuerpo->
+</html> <!-fin de la etiqueta html->

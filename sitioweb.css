@@ -1,0 +1,58 @@
+*{
+   box-sizing: border-box;
+}
+body{ /*afectara al cuerpo*/
+margin: 0; /*margen de pixeles 0*/
+font-family:sans-serif;
+background-color: rgba(0,0,0,0.9); /*en este codigo cambiara el color del fondo*/
+}
+
+.sitioweb{ /*afectara a la clase con este nombre*/
+	width: 500px; /*ese afectara el largo de nuetra*/
+	max-width: 500%;
+	margin: auto;
+	margin-top: 40px; /*afectara el margen de la parte de arriba, miestras menos sean los px estara mas arriba */
+	padding: 25px; /*centrara el texto dependiendo loa pixeles que les des*/
+	box-shadow:0 0 20px 1px rgba(100,50,200,0.8); /*color del borde*/
+	position: relative;
+	background:rgba(200,255,255,0.6); /*color del la tabla del formulario*/
+
+}
+
+.sitio_input, .sitio_label, .sitio_submit{ /*nos afectara las clases con estos nombre*/
+   display:block;
+   width: 96%; /*alargara las cajas de texto*/
+   font-size: 1.3em;
+}
+
+.sitio_titulo{ /*nos afectara la clase con este solo nombre*/
+  text-align: center;
+  margin-top: 0;
+  color:#0B3861; /*color del titulo*/
+}
+
+.sitio_input{
+	padding: 10px;
+	background:  rgba(0,0,150,0.2); /* eses codigo cambiara  el color de las letras del titulo*/
+	border: 1px solid rgba(0,4,4,0.7);
+	margin-bottom: 20px; 
+}
+
+.sitio_submit{
+	background: #0B2161;  /*color del boton*/
+	color: #FFFFFF; /*color de las letras del boton*/
+	padding: 10px 5px;
+	cursor: pointer;
+	border:none;
+	border-radius: 20px;
+}
+.sitio_input:focus{
+ 	.outline: 3px solid rgba(0,0,0,0.1);
+ 
+ }
+ .sitio_input:focus + .sitio_label{
+ 	margin-top:-10px; 
+ }
+.fijar{
+	margin-top:-50px; 
+}

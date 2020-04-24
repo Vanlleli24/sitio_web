@@ -1,0 +1,15 @@
+h2{
+	
+	color: #FFFFFF;
+	position: absolute;
+	top:10%;
+	left: 20%;
+}
+.leer a{
+	float: left;
+	font-size: 23px;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}

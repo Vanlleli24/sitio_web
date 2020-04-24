@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 50;
+	box-sizing: border-box;
+	}
+
+
+.banner{ /*utilizara un id*/
+	margin-top: 30px; /*margen */
+    position: relative; /*posicion relativa*/
+    color: #A54B0F;
+    size: 6px;
+}
+
+.foto img { /*modificacion de imagen*/
+	width: 100px; /*ancho*/
+	height: 100px; /*alto*/
+	margin: 2px;
+	
+	
+
+}
+.contenedor{
+	overflow: hidden;
+	background-color: #533352;
+	font-family: sans-serif;
+}
+.contenedor a{
+	float: left;
+	font-size: 16px;
+	color: #B97720;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+.contenedor a:hover{ 
+	background-color: #1E379A ; /*color*/
+}
+.vanlleli3 img{
+	width: 400px; /*ancho*/
+	height: 500px; /*alto*/
+	margin: 2px;
+	position: relative;
+}
+h2{
+	float: right;
+	color: #EFA1EC;
+	position: absolute;
+	top: 26%;
+	left: 31%;
+	text-align: justify;
+}
+.vanlleli3 a{
+	float: left;
+	font-size: 30px;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 1px 16px;
+	text-decoration: none;
+	width: 400px; /*ancho*/
+	height: 500px;
+
+}
+

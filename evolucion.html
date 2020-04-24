@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html> <!-inio de la etiqueta html->
+<head> <!-inicio del la cabecera ->
+	<title></title> <!-titulo de la pestaña->
+	
+<link rel="stylesheet" type="text/css" href="evolucion.css">
+<link rel="stylesheet" href="inf.css">
+<link rel="stylesheet" href="presentacion.css"> 
+</head> <!-fin del la cabecera ->
+<body background="img/luna.jpg"> 
+<div class="contenedor">
+			<nav class="menu">
+					<div class="menu_desplegable">
+	    <div class="contenido_desplegable" > 
+			<b><a href="https://www.facebook.com/vanlleli.castaneda">FACEBOOK</a></b>
+			<b><a href="https://www.instagram.com/vanlleli3/">INSTAGRAM</a></b>
+		</div>
+		<b><a href="presentacion.html">PRESENTACION</a></b>
+	        <b><a href="gustos.html">GUSTOS</a></b>
+		  	<b><a href="slider_css.html">RECUERDOS</a></b>
+		 	<b><a href="evolucion.html">MI EVOLUCION</a></b>
+<b><a href="familia.html">FAMILIA </a></b>
+		  	<b><a href="index.html">CERRAR SESION</a></b>
+
+		  	</nav>
+		</div> 
+		<br>
+		<br>
+<div class="contenedor-slider"> 
+	<!imagen 1->
+	<div class="miSlider desvanecido"> 
+		<div class="numeroTexto">1/8</div> 
+		<img src="img/evolucion1.jpg" style="width: 100%"> 
+		<div class="titulo">Imagen 1</div> 
+	</div> 
+	<!imagen 2->
+	<div class="miSlider desvanecido"> <!-bloque con el mismo nombre de la clase->
+		<div class="numeroTexto">2/8</div> <!-clase para los numeros!>
+		<img src="img/evolucion2.jpg" style="width: 100%">  <!-clase para la imagen!>
+		<div class="titulo">Imagen 2</div> <!-clase para el titulo->
+	</div> <!-fin del bloque->
+	<!imagen 3->
+	<div class="miSlider desvanecido"> <!-bloque con el nombre de la clase->
+		<div class="numeroTexto">3/8</div> <!-clase para los numeros!>
+		<img src="img/evolucion3.jpg" style="width: 100%"> <!-clase para la imagen!>
+		<div class="titulo">Imagen 3</div> <!-clase para el titulo->
+	</div> 
+	<div class="miSlider desvanecido"> 
+		<div class="numeroTexto">4/8</div> 
+		<img src="img/evolucion4.jpg" style="width: 100%"> 
+		<div class="titulo">Imagen 4</div> 
+	</div> 
+	<div class="miSlider desvanecido"> 
+		<div class="numeroTexto">5/8</div> 
+		<img src="img/evolucion5.jpg" style="width: 100%"> 
+		<div class="titulo">Imagen 5</div> 
+	</div> 
+	<div class="miSlider desvanecido"> 
+		<div class="numeroTexto">6/8</div> 
+		<img src="img/evolucion6.jpg" style="width: 100%"> 
+		<div class="titulo">Imagen 6</div> 
+	</div> 
+	<div class="miSlider desvanecido"> 
+		<div class="numeroTexto">7/8</div> 
+		<img src="img/recuerdo7.jpg" style="width: 100%"> 
+		<div class="titulo">Imagen 7</div> 
+	</div> 
+	<div class="miSlider desvanecido"> 
+		<div class="numeroTexto">8/8</div> 
+		<img src="img/mifoto.jpg" style="width: 100%"> 
+		<div class="titulo">Imagen 8</div> 
+	</div> 
+	
+	<a class="previa" onclick="plusSlides(-1)">&#10094;</a> <!-clase previa->
+	<a class="siguiente" onclick="plusSlides(1)">&#10095;</a> <!-clase siguiente->
+</div> <!-fin del bloque principal->
+<br> <!-salto->
+<!ipuntitos->
+<DIV style="text-align: center;"> <!-inicio de otro bloque->
+	<span class="puntito" onclick="currentSlide(1)"></span> <!-agrupacion dentro de una lianea->
+	<span class="puntito" onclick="currentSlide(2)"></span>
+	<span class="puntito" onclick="currentSlide(3)"></span>
+	<span class="puntito" onclick="currentSlide(4)"></span>
+	<span class="puntito" onclick="currentSlide(5)"></span>
+	<span class="puntito" onclick="currentSlide(6)"></span>
+	<span class="puntito" onclick="currentSlide(7)"></span>
+	<span class="puntito" onclick="currentSlide(8)"></span>
+
+</DIV> <!-fin del bloque->
+<script src="slider.js"></script> <!-llama a traer a traer a js->
+
+</body> <!-fin de la etiqueta cuerpo->
+</html>  <!-fin de la etiqueta html->

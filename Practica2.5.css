@@ -1,0 +1,45 @@
+.botonTituloSeccion{
+	background-color: #3F0734; /*colores de fondo del objeto*/
+	color: #FFFFFF; /*esta linea para combinar  los colores en la pagina */
+	cursor: pointer;
+	padding: 18px; /* distancia desde el borde hasta el contenido*/
+	width: 100%; /*es una declaracion y se forma por una propiedad y un valor*/
+	border: none;
+	text-align: left; /*texto separador*/
+	outline: none;
+	font-size: 15px; /*tamaño de la fuente */
+	transition: 0.4s;
+}
+
+.active, .botonTituloSeccion:hover{ 
+	background-color: #B97720;/* colores de fondo*/
+}
+
+.contenidoSeccion{
+	padding-top: 0; /*distancia desde el borde hasta el contenido*/
+	display: none;
+	background-color: #F0BA5B1; /*colores de fondo*/
+	overflow: hidden;
+	text-align: justify;
+	max-width: 90%; /*alto del elemento*/
+	margin-left: 5%; /*distancia del elemento y otro*/
+}
+.contenedor{
+	max-width: 70%; /* alto de un elemento*/
+	margin-left: 15%; /*distancia del elemento y otro*/
+}
+.contenedor img{
+	text-align: center;
+	text-decoration: none;
+	width: 300px; /*ancho*/
+	height: 250px;
+	display:block;
+margin:auto;
+	
+
+}
+*{
+	margin: 0;
+	padding: 50;
+	box-sizing: border-box;
+	}
